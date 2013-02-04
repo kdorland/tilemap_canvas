@@ -1,0 +1,56 @@
+{
+    "images": [{
+        "sheet": "general",
+        "src": "res/sprite_sheet_x2.png",
+        "tileSize": 32,
+        "width": 5,
+        "height": 5
+    }, {
+        "sheet": "water_sheet",
+        "src": "res/water_sheet2_x2.png",
+        "tileSize": 32,
+        "width": 11,
+        "height": 5
+    }],
+    
+    "namedSprites": [{
+        "name": "grass",
+        "sheet": "general",
+        "index": [1],
+        "duration": 0,
+        "loop": false
+    }, {
+        "name": "flowers",
+        "sheet": "general",
+        "index": [2],
+        "duration": 1700,
+        "loop": true
+    }, {
+        "name": "weed",
+        "sheet": "general",
+        "index": [6],
+        "duration": 1500,
+        "loop": true
+    }, {
+        "name": "tree",
+        "sheet": "general",
+        "index": [7,8],
+        "duration": 500,
+        "loop": true
+    }, {
+        "name": "water1",
+        "sheet": "water",
+        "index": [1],
+        "duration": 0,
+        "loop": false
+    }],
+    
+    "indexedSprites": [{
+        "name": "water",
+        "sheet": "water_sheet",
+        "total": 54,
+        "duration": 0,
+        "loop": false,
+        "animFrames": 1
+    }]
+}

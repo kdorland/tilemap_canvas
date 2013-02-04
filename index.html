@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>saga test</title>
+    <script type="text/javascript" src="lib/jquery-1.6.2.js"></script>
+    <style type="text/css">
+      body {
+        background-color: #333333 
+      }
+      canvas {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="512" height="386">
+      <p>Your browser does not support the canvas element.</p>
+    </canvas>
+        
+    <!-- Noise -->
+    <script src="lib/mersenne-twister.js"></script>
+    <script src="lib/ValueNoise.js"></script>
+    
+    <!-- Engine includes -->
+    <script src="engine/Core.js"></script>
+    <script src="engine/Logging.js"></script>
+    <script src="engine/GameCanvas.js"></script>
+    <script src="engine/GameTimer.js"></script>
+    <script src="engine/Input.js"></script>
+    <script src="engine/StateContext.js"></script>
+    <script src="engine/State.js"></script>
+    <script src="engine/ResourceHandler.js"></script> 
+    <script src="engine/Camera.js"></script>
+    <script src="engine/Setup.js"></script>
+    <script src="engine/SpriteSheet.js"></script>
+    <script src="engine/AnimatedSprite.js"></script>
+    
+    <!-- Game -->
+    <script src="code/Core.js"></script>
+    <script src="code/LoadState.js"></script>
+    <script src="code/RunState.js"></script>
+    <script src="code/Map.js"></script>
+    <script src="code/Tile.js"></script>
+    <script src="code/AreaTilePicker.js"></script>
+    <script src="code/GenerateMap.js"></script>
+    
+    <script>
+        jQuery(document).ready(function() {
+          window.mgame = new SagaEngine.Core();
+          mgame.initialize(new Mana.LoadState());
+        });
+    </script>
+  </body>
+</html>
