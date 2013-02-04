@@ -15,8 +15,8 @@ var GenerateMap = {
         }
         water.seedRandom(this.waterSeed);
         SagaEngine.Logging.trace("waterSeed is \""+this.waterSeed+"\"");
-        water.seedRandom("6e79njZPGEd");
-        terrain.seedRandom("6e71njZPGEd");
+        water.seedRandom(this.makeSeed(10));
+        terrain.seedRandom(this.makeSeed(10));
         
         terrain.initNoise(0.55);
         water.initNoise(0.45);
